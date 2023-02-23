@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Schleam</title>
+</head>
+<body>
+    <div class="HeaderBack">
+        <div class="OverHeaderAll">
+            <div class="OverHeader">
+                <p>Steam</p>
+                <p>Ansicht</p>
+                <p>Freunde</p>
+                <p>Spiele</p>
+                <p>Hilfe</p>
+            </div>
+            <div class="Right">
+                <div class="Icon"><ion-icon name="megaphone-outline"></ion-icon></div>
+                <div class="Icon"><ion-icon name="mail-open-outline"></ion-icon></div>
+                <div class="Right Box">
+                    <img src="USER.jpg" width="25"/>
+                    <p id="name">SushiCat</p>
+                    <p>0,21€</p>
+                </div>
+            </div>
+        </div>
+        <div ondrag="" ondrop="" class="Header">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+            <div>Shop</div>
+            <div>Bibliotek</div>
+            <div>Community</div>
+            <div>Name</div>
+        </div>
+    </div>
+    <div class="Games">
+        
+        <div class="Inline Start">
+            <div class="HomeBox">STARTSEITE</div>
+            <div class="CollectionsIcon"><ion-icon name="logo-microsoft"></ion-icon></div>
+        </div>
+        
+        <div class="Inline">
+
+            <div class="container-fluid"></div>
+            <div class="form-group col-sm-8">
+                <div id="myMultiselect" class="multiselect">
+                  <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
+                    <select class="form-select">
+                      <option>somevalue</option>
+                    </select>
+                    <div class="overSelect"></div>
+                  </div>
+                  <div id="mySelectOptions">
+                    <label for="one"><input type="checkbox" id="one" onchange="checkboxStatusChange()" value="Spiele" /> Spiele</label>
+                    <label for="two"><input type="checkbox" id="two" onchange="checkboxStatusChange()" value="Soundtracks" /> Soundtracks</label>
+                    <label for="three"><input type="checkbox" id="three" onchange="checkboxStatusChange()" value="Software" /> Software</label>
+                    <label for="four"><input type="checkbox" id="four" onchange="checkboxStatusChange()" value="Werkzeuge" /> Werkzeuge</label>
+                    <hr>
+                    <label for="five"><input type="checkbox" id="five" onchange="checkboxStatusChange()" value="Nach Kollektion Gruppieren" /> Nach Kollektion<br>Gruppieren</label>
+                  </div>
+                </div>
+            </div>
+        
+
+            <span class="Disapper"><ion-icon name="arrow-up-outline"></ion-icon></span>
+            <span class=""><ion-icon name="time-outline"></ion-icon></span>
+            <span class=""><ion-icon name="caret-forward-circle-outline"></ion-icon></span>
+        </div>
+    
+        
+        <div class="Inline">
+            <div class="Search">
+                <div class="loopusIco"><ion-icon name="search-outline"></ion-icon></div>
+                <input class="SearchInput" name="Suche nach Name"/>
+                <div class="settingsIco"><ion-icon name="options-outline"></ion-icon></div>
+            </div>
+        </div>
+        
+        <div id="ListID" class="scroller" style="font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+            
+           
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="generate.js"></script>
+
+
+</body>
+</html>
+
+
+ <!-- <div class="GameHoverItem" id="ThisIsAGame" onclick="GameClicked('ThisIsAGame')"><img src="Icons/ThisIsAGame.png">This is a Game</div>
+            <div class="GameHoverItem" id="AmongUs" onclick="GameClicked('AmongUs')"><img src="Icons/AmongUs.png">Among Us</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/Minecraft.png">Minecraft</div>
+            <div class="GameHoverItem" id="Valorant" onclick="GameClicked('Valorant')"><img src="Icons/Valorant.png">Valorant</div>
+            <div class="GameHoverItem" id="Ark" onclick="GameClicked('Ark')"><img src="Icons/Ark.png">Ark</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Felix')"><img src="Icons/Felix.jpeg">Felix</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/NDR.jpeg">Nico's donut rush</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/Scibble.png">Scribble.io</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/Tetris.png">Tetris</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/Osu.png">Osu</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/Forza4.bmp">forza horizon 5</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Hallo</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 1</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 2</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 3</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 4</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 5</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 6</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 7</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 8</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 9</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 10</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 11</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 12</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 13</div>
+            <div class="GameHoverItem" id="Minecraft" onclick="GameClicked('Minecraft')"><img src="Icons/">Game 14<br></div> -->

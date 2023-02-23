@@ -1,0 +1,251 @@
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #282534;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.OverHeaderAll
+{
+    font-size: 12px;
+    margin: 0px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.OverHeader
+{
+    margin: 0 0 0 10px;
+    gap:10px;
+    width: max-content;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    color: gray;
+}
+.Icon
+{
+    font-size: 16.3px;
+    padding: 3px 5px 3px 5px;
+    background-color: #302930;
+}
+ion-icon
+{
+    color: white;
+}
+#name
+{
+    color: #9090ff;
+}
+.Box
+{
+    background-color: #302930;
+    height: 25px;
+}
+.Right
+{
+    color: gray;
+    margin: 0 10px 0 0;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+/*  Header */
+.HeaderBack
+{
+    background: #141324;
+    padding-bottom: 3px;
+}
+    .Header
+{
+    margin-left: 10px;
+    font-size: 23px;
+    width: 100%;
+    gap:10px;
+    justify-content: flex-start;
+    flex-direction: row;
+    display: flex;
+}
+.Header ion-icon
+{
+    margin-top: 2px;
+}
+
+.Start
+{
+    font-size: 15px;
+    padding: 10px 0 10px 10px;
+    gap: 10px;
+    background-color: #141324;
+    color: gray;
+}
+.CollectionsIcon
+{
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #142630;
+}
+.HomeBox
+{
+    border-radius: 5px;
+    background-color: #142630;
+    padding: 5px 0 3px 3px;
+    width: 100vw;
+}
+.Games ion-icon
+{
+    margin-top: 2px;
+    font-size: 18px;
+}
+.Games
+{
+    width: 270px;
+    border-right: 2px #080510 solid;
+    height: 100%;
+    background-color: #141630;
+}
+.Inline
+{
+    padding-top: 10px;
+    display: flex;
+}
+
+/*SearchBar*/
+.loopusIco
+{
+    color: gray;
+    margin: 3px 5px;
+    justify-content: flex-start;
+}
+.settingsIco ion-icon
+{
+    color: #bbbbbb;
+    font-size: 25px;
+    --ionicon-stroke-width: 30px;
+}
+.settingsIco
+{
+    margin-top: 1px;
+    justify-content: flex-end;
+}
+.Search
+{
+
+    display: flex;
+    width: 100vw;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    background-color: #141324;
+}
+.SearchInput
+{
+    padding: 5px 50px 5px 5px;
+    
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.SearchInput:focus
+{
+    outline: none;
+}
+
+/* CheckBox */
+.form-group
+{
+    margin-left: 10px;
+}
+.myMultiselect
+{
+    margin-left: 100px;
+}
+.form-select
+{
+    border:none;
+    font-size: 20px;
+    padding: 0 30px 0 0;
+    color: #dddddd;
+    background-color: #141324;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+.multiselect {
+    width: 100%;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    width: 100%;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #mySelectOptions {
+    display: none;
+    border: 0.5px #7c7c7c solid;
+    background-color: #141630;
+    max-height: 150px;
+    overflow-y: scroll;
+    color: white;
+  }
+  
+  #mySelectOptions label {
+    display: block;
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    background-color: #ffffff00;
+    padding: 0 2.25rem 0 .75rem;
+    /* padding: .375rem 2.25rem .375rem .75rem; */
+  }
+  
+  #mySelectOptions label:hover {
+    background-color: #1e90ff;
+  }
+
+.scroller img
+{
+    margin-bottom: -5px;
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+.scroller 
+{
+    margin: 10px 0 0 20px;
+    border-radius: 5px;
+    width: 250px;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+    scrollbar-color: #ccc none;
+    scrollbar-width: thin;
+    scrollbar-3dlight-color: #1e90ff;
+ }
+  
+ .GameHoverItem:hover
+ {
+    background-color: #141324;
+    color: white;
+ }
